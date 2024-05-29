@@ -17,9 +17,9 @@ struct EventRowView: View {
                 .padding(.bottom, 5)
             HStack {
                 VStack(alignment: .leading){
-                    Text(event.formatName(name: event.homeTeam))
+                    Text(event.formatName(name: event.homeTeam.name))
                         .font(.headline)
-                    Text(event.formatName(name: event.awayTeam))
+                    Text(event.formatName(name: event.awayTeam.name))
                         .font(.headline)
                 }
                 if event.homeScore != nil && event.homeScore?.period1 != nil {
@@ -47,11 +47,13 @@ struct EventRowView: View {
                 }.padding(.leading,5).foregroundColor(.indigo)
                 Spacer()
                 
-                VStack(alignment: .trailing){
-                    ForEach(event.channels, id: \.self) { string in
-                        Text(string)
-                            .font(.subheadline)
-                            .fontWeight(.heavy)
+                if event.channels != nil {
+                    VStack(alignment: .trailing){
+                        ForEach(event.channels!, id: \.self) { string in
+                            Text(string)
+                                .font(.subheadline)
+                                .fontWeight(.heavy)
+                        }
                     }
                 }
             }
@@ -61,6 +63,5 @@ struct EventRowView: View {
     }
 }
 
-#Preview (traits: .fixedLayout(width: 400, height: 100)) {
-    EventRowView(event: Event(id:123456,homeTeam: "Janik Sinner", awayTeam: "Mevderev", status: "Directo", tournament: "Roland Garros", homeScore: Score(current: 5,period1: 2, period2: 4, period3: 6), awayScore: Score(current: 5, period1: 2, period2: 4, period3: 6),channels: ["M. Deportes 1", "Movistar Plus"]))
-}
+//#Preview (traits: .fixedLayout(width: 400, height: 100)) {
+//    EventRowView(event: Event(id:123456,homeTeam: Team(name: "Jannik Sinner", slug: "j-sinner", shortName: "Sinner", gender: "man", userCount: 123, playerTeamInfo: PlayerInfo(residence: <#T##String#>, birthplace: <#T##String#>, height: <#T##Int#>, weight: <#T##Int#>, plays: <#T##String#>, turnedPro: <#T##String#>, prizeCurrent: <#T##Int#>, prizeTotal: <#T##Int#>, id: <#T##Int#>, birthDateTimestamp: <#T##Int#>, prizeCurrentRaw: <#T##Prize#>, prizeTotalRaw: <#T##Prize#>, currentRanking: <#T##Int#>), nameCode: "sinner", ranking: 2, national: false, type: 1, id: 222, country: <#T##Country#>, fullName: "JanikSinner", teamColors: <#T##TeamColors#>), awayTeam: "Mevderev", status: "Directo", tournament: "Roland Garros", homeScore: Score(current: 5,period1: 2, period2: 4, period3: 6), awayScore: Score(current: 5, period1: 2, period2: 4, period3: 6),channels: ["M. Deportes 1", "Movistar Plus"]))}

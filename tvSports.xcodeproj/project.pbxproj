@@ -15,6 +15,13 @@
 		4C2DDBAF2C05499100B606B8 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DDBAE2C05499100B606B8 /* EventListView.swift */; };
 		4C3D55062C0663390072CE60 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D55052C0663390072CE60 /* EventViewModel.swift */; };
 		4C3D55092C0663790072CE60 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D55082C0663790072CE60 /* ApiService.swift */; };
+		4CB5D1F82C07E147001369B1 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D1F72C07E147001369B1 /* Team.swift */; };
+		4CB5D1FA2C07E1AE001369B1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D1F92C07E1AE001369B1 /* Country.swift */; };
+		4CB5D1FC2C07E3D2001369B1 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D1FB2C07E3D2001369B1 /* Channel.swift */; };
+		4CB5D1FE2C07E698001369B1 /* ApiChannelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D1FD2C07E698001369B1 /* ApiChannelService.swift */; };
+		4CB5D2002C07E70B001369B1 /* ChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D1FF2C07E70B001369B1 /* ChannelViewModel.swift */; };
+		4CB5D2062C07EB00001369B1 /* ChannelResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5D2052C07EB00001369B1 /* ChannelResponseModel.swift */; };
+		4CB5D2082C07EE72001369B1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4CB5D2072C07EE72001369B1 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,15 @@
 		4C2DDBAE2C05499100B606B8 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		4C3D55052C0663390072CE60 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		4C3D55082C0663790072CE60 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		4CB5D1F62C07DA17001369B1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4CB5D1F72C07E147001369B1 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		4CB5D1F92C07E1AE001369B1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		4CB5D1FB2C07E3D2001369B1 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		4CB5D1FD2C07E698001369B1 /* ApiChannelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiChannelService.swift; sourceTree = "<group>"; };
+		4CB5D1FF2C07E70B001369B1 /* ChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewModel.swift; sourceTree = "<group>"; };
+		4CB5D2032C07E7A4001369B1 /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
+		4CB5D2052C07EB00001369B1 /* ChannelResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelResponseModel.swift; sourceTree = "<group>"; };
+		4CB5D2072C07EE72001369B1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,7 @@
 		4C2DDB972C053AA700B606B8 /* tvSports */ = {
 			isa = PBXGroup;
 			children = (
+				4CB5D2042C07EAEA001369B1 /* Responses */,
 				4C3D55072C0663660072CE60 /* Services */,
 				4C3D55042C06631D0072CE60 /* ViewModels */,
 				4C3D55032C0660100072CE60 /* Views */,
@@ -66,6 +83,9 @@
 				4C2DDB982C053AA700B606B8 /* tvSportsApp.swift */,
 				4C2DDB9C2C053AA900B606B8 /* Assets.xcassets */,
 				4C2DDB9E2C053AA900B606B8 /* Preview Content */,
+				4CB5D1F62C07DA17001369B1 /* MyPlayground.playground */,
+				4CB5D2032C07E7A4001369B1 /* env.xcconfig */,
+				4CB5D2072C07EE72001369B1 /* .gitignore */,
 			);
 			path = tvSports;
 			sourceTree = "<group>";
@@ -82,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				4C2DDBAA2C05445600B606B8 /* Event.swift */,
+				4CB5D1F72C07E147001369B1 /* Team.swift */,
+				4CB5D1F92C07E1AE001369B1 /* Country.swift */,
+				4CB5D1FB2C07E3D2001369B1 /* Channel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				4C3D55052C0663390072CE60 /* EventViewModel.swift */,
+				4CB5D1FF2C07E70B001369B1 /* ChannelViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -107,8 +131,17 @@
 			isa = PBXGroup;
 			children = (
 				4C3D55082C0663790072CE60 /* ApiService.swift */,
+				4CB5D1FD2C07E698001369B1 /* ApiChannelService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4CB5D2042C07EAEA001369B1 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				4CB5D2052C07EB00001369B1 /* ChannelResponseModel.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2DDBA02C053AA900B606B8 /* Preview Assets.xcassets in Resources */,
+				4CB5D2082C07EE72001369B1 /* .gitignore in Resources */,
 				4C2DDB9D2C053AA900B606B8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,9 +217,15 @@
 			files = (
 				4C2DDBAB2C05445600B606B8 /* Event.swift in Sources */,
 				4C2DDBAF2C05499100B606B8 /* EventListView.swift in Sources */,
+				4CB5D1F82C07E147001369B1 /* Team.swift in Sources */,
 				4C2DDB992C053AA700B606B8 /* tvSportsApp.swift in Sources */,
+				4CB5D1FA2C07E1AE001369B1 /* Country.swift in Sources */,
+				4CB5D2002C07E70B001369B1 /* ChannelViewModel.swift in Sources */,
 				4C3D55062C0663390072CE60 /* EventViewModel.swift in Sources */,
+				4CB5D1FE2C07E698001369B1 /* ApiChannelService.swift in Sources */,
 				4C3D55092C0663790072CE60 /* ApiService.swift in Sources */,
+				4CB5D1FC2C07E3D2001369B1 /* Channel.swift in Sources */,
+				4CB5D2062C07EB00001369B1 /* ChannelResponseModel.swift in Sources */,
 				4C2DDBA92C053FD000B606B8 /* EventRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
